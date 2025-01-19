@@ -33,6 +33,7 @@ def main():
     with open('file.txt', 'w') as f:
         for link in filtered_links:
             f.write(link + '\n')
+        f.close()
 
     print(f'Отфильтрованные ссылки сохранены в file.txt. Найдено {len(filtered_links)} ссылок.')
 
